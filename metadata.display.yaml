@@ -30,6 +30,7 @@ spec:
         create_router:
           name: create_router
           title: Create Router
+          level: 1
         drain_nat_ips:
           name: drain_nat_ips
           title: Drain Nat Ips
@@ -45,24 +46,36 @@ spec:
         log_config_enable:
           name: log_config_enable
           title: Log Config Enable
+          level: 1
         log_config_filter:
           name: log_config_filter
           title: Log Config Filter
+          enumValueLabels:
+            - label: Log errors only
+              value: ERRORS_ONLY
+            - label: Log translations only
+              value: TRANSLATIONS_ONLY
+            - label: Log all traffic
+              value: ALL
         max_ports_per_vm:
           name: max_ports_per_vm
           title: Max Ports Per Vm
         min_ports_per_vm:
           name: min_ports_per_vm
           title: Min Ports Per Vm
+          level: 1
         name:
           name: name
           title: Name
+          level: 1
         nat_ips:
           name: nat_ips
           title: Nat Ips
+          level: 1
         network:
           name: network
           title: Network
+          level: 1
         project_id:
           name: project_id
           title: Project Id
@@ -84,6 +97,14 @@ spec:
         source_subnetwork_ip_ranges_to_nat:
           name: source_subnetwork_ip_ranges_to_nat
           title: Source Subnetwork Ip Ranges To Nat
+          level: 1
+          enumValueLabels:
+            - label: All subnetworks, all IP ranges
+              value: ALL_SUBNETWORKS_ALL_IP_RANGES
+            - label: All subnetworks, primary IP ranges only
+              value: ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES
+            - label: Custom list of subnetworks
+              value: LIST_OF_SUBNETWORKS
         subnetworks:
           name: subnetworks
           title: Subnetworks
