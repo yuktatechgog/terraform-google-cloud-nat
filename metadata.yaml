@@ -24,7 +24,7 @@ spec:
     source:
       repo: https://github.com/yuktatechgog/terraform-google-cloud-nat.git
       sourceType: git
-    version: 5.4.1
+    version: 5.4.2
     actuationTool:
       flavor: Terraform
       version: ">= 1.3"
@@ -79,6 +79,11 @@ spec:
         connections:
           - source:
               source: github.com/terraform-google-modules/terraform-google-network
+              version: ">= 12.0.0"
+            spec:
+              outputExpr: network_name
+          - source:
+              source: github.com/terraform-google-modules/terraform-google-network//modules/vpc
               version: ">= 12.0.0"
             spec:
               outputExpr: network_name
