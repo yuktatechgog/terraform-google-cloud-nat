@@ -30,7 +30,6 @@ spec:
         create_router:
           name: create_router
           title: Create Router
-          level: 1
         drain_nat_ips:
           name: drain_nat_ips
           title: Drain Nat Ips
@@ -63,7 +62,6 @@ spec:
         min_ports_per_vm:
           name: min_ports_per_vm
           title: Min Ports Per Vm
-          level: 1
         name:
           name: name
           title: Name
@@ -75,7 +73,6 @@ spec:
         network:
           name: network
           title: Network
-          level: 1
         project_id:
           name: project_id
           title: Project Id
