@@ -117,3 +117,9 @@ spec:
         udp_idle_timeout_sec:
           name: udp_idle_timeout_sec
           title: Udp Idle Timeout Sec
+    runtime:
+      outputs:
+        name:
+          visibility: VISIBILITY_ROOT
+        router_name:
+          visibility: VISIBILITY_ROOT
